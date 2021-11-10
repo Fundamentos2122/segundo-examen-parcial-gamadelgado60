@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/framework.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/framework.css">
+</head>
+<body class="container-fluid container-sm">
+    <div class="modal" id="modal_test">
+        <div class="modal-content bg-success">
+            <div class="modal-header">
+                <h5>Agregar tarea</h5>
+                <a data-dismiss="#modal_test">x</a>
+            </div>
+            <div class="modal-body">
+                <form action="" name="tareaForm">
+                    <div class="row">
+                        <div class="col-3">
+                            <label for="titulo">Titulo</label>
+                        </div>
+                        <div class="col" style="display: flex;justify-content: flex-end; border-radius: 8px;">
+                            <input type="text" id="titulo" name="titulo" placeholder="titulo.." style="width: 100%;"required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <label for="Descripcion">Descripcion</label>
+                        </div>
+                        <div class="col" style="display: flex;justify-content: flex-end; border-radius: 8px;">
+                            <input type="text" id="Descripcion" name="Descripcion" placeholder="Descripcion.." style="width: 100%;">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <label for="fecha">Fecha</label>
+                        </div>
+                        <div class="col" style="display: flex;justify-content: flex-end; border-radius: 8px;">
+                            <input type="date" id="fecha" name="fecha" placeholder="titulo.." style="width: 100%;">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col"style="display: flex;justify-content: flex-end;">
+                            <button class="btn btn-success" data-dismiss="#modal_test" >Guardar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+        <nav class="navbar bg-info" style="height: 250px;">
+            <div class="col display-1 text-light" style="text-align: center;">Lista de tareas</div>
+        </nav>
+        <div class="row bg-light" style="height: 40px;align-items: center;">
+            <div class="col-4">
+                <input type="checkbox">ver todos
+            </div>
+            <div class="col"></div>
+            <div class="col-3" style="display: flex;justify-content: flex-end;">
+                <div class="btn btn-secondary" data-toggle="modal" data-target="#modal_test">Nueva</div>
+            </div>
+        </div>
+        <div class="tareaes" id="tareas">
+            <div class="row border-top">
+                <div class="col-9">
+                    <h6>Tarea hecha</h6>
+                </div>
+                <div class="col-3"style="display: flex;justify-content: flex-end;">
+                    <div class="texto-ch">fecha</div>
+                </div>
+                <div class="col-12">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste doloremque architecto, excepturi autem reiciendis quod illo impedit rem, quis officia voluptate sit quasi aut atque quos mollitia! Commodi, vero eveniet!
+                </div>
+                <div class="col-12"style="display: flex;justify-content: flex-end;">
+                    <input type="checkbox">completada
+                </div>
+            </div>
+        </div>
+    <script src="js/examen.js"></script>
+</body>
+</html>

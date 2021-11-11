@@ -367,6 +367,11 @@ html, body {
     padding: 15px;
 }
 
+.compl
+{
+    background-color: var(--color-success-clear);
+}
+
 @media (min-width: 760px)
 {
     .navbar-toggle
